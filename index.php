@@ -2,45 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        .container {
-            margin: 50px auto 50px auto;
-        }
-
-        .infoHeader1 {
-            text-align: center;
-            color: blue;
-            text-decoration: underline;
-            margin: 5px;
-        }
-
-        .infoHeader2 {
-            text-align: center;
-            color: red;
-            text-decoration: underline;
-            margin: 5px;
-        }
-
-
-        .infoPara {
-            max-width: 80%;
-            margin: 20px auto 50px auto;
-            font-size: 19px;
-        }
-
-        span {
-            color: red;
-        }
-        .footer{
-            margin-top: 100px;
-        }
-    </style>
-
-
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>

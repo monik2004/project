@@ -1,0 +1,52 @@
+#img1 {
+    width: 400px;
+    height: 400px;
+}
+
+.container {
+
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.contectForm {
+    width: 400px;
+    height: 400px;
+    padding: 12px 25px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: rgba(128, 127, 127, 0.5) 5px 5px, rgba(146, 145, 145, 0.3) 10px 10px, rgba(153, 149, 149, 0.2) 15px 15px, rgba(163, 159, 159, 0.1) 20px 20px, rgba(173, 159, 159, 0.05) 25px 25px;
+    ;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 300px;
+    font-size: xx-large;
+    border: 0px white;
+    border-radius: 10px;
+    
+    
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+#btn_submit {
+    font-size: xx-large;
+    width: 300px;
+    border-radius: 10px;
+    border: 0px whitesmoke;  
+    background: rgb(203, 198, 198);
+    color: rgb(60, 53, 53);
+}
+
+#btn_submit:hover{
+    background: rgb(160, 155, 155);
+
+}
