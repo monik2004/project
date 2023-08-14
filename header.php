@@ -18,7 +18,7 @@
         <div class="menuItem"><a> Register </a>
             <div class="subMenu">
                 <div class="subMenuItem"> <a href="#"> Register Doner/Reciver </a> </div>
-                <div class="subMenuItem"> <a href="#"> Register Hospital </a> </div>
+                <div class="subMenuItem"> <a href="hospitalRegistrationForm.php"> Register Hospital </a> </div>
                 <div class="subMenuItem"> <a href="#"> Register Blood Bank </a> </div>
             </div>
         </div>

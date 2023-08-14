@@ -1,0 +1,14 @@
+.container {
+
+    margin-top: 65px;
+ 
+
+}
+
+input,select{
+    font-size: x-large;
+    padding: 8px;
+    margin: 10px;
+    width: 330px;
+    border-radius:10px ;
+}

@@ -64,11 +64,9 @@
            One of the factor of the public afraid to donate their blood is they believe in myths. The myths that they always believe are, if they donate their blood they will become fat and if they donate their blood, their blood will become less in total of amount and they will become pale. This BBMS should provide more information in order to educate the public so that they know blood donation will not give bad effects. By giving awareness to the public, this will increase volunteers to donate their blood.
         </p>
 
-
     </div>
     <div class="footer">
         <?php include "footer.php"; ?>
     </div>
 </body>
-
 </html>

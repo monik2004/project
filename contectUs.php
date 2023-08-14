@@ -25,7 +25,7 @@
 
             </form>
         </div>
-        <img src="img/contectFormImage" id="img1" >
+        <img src="img/contectFormImage.jpg" id="img1" >
     </div>
 </body>
 
