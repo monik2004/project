@@ -1,31 +1,60 @@
-header{
-    background: rgb(192, 184, 184);
-    height: 50px;
-    width: 100%;
-    top: 0px;
-    position: fixed;
-    
-}
-ul{
-    width: 40%;
-    height: 50px;
-    margin: auto 0px auto auto;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items:center;
+   a {
+       font-size: large;
+       text-decoration: none;
+       color: whitesmoke;
 
-}
+   }
 
-a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: large;
-}
+   nav {
+       height: 50px;
+       width: 100%;
+       top: 0px;
+       position: fixed;
+   }
 
-.logo img {
-    height:50px;
-    width: 500px;
-    float: left;
-}
+   .menu {
+       background: rgb(156, 153, 153);
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+   img {
+       height: 50px;
+       width: 500px;
+   }
+
+   .menuItem>a {
+       padding: 17px;
+   }
+
+   .menu>.menuItem :hover {
+       background: gray;
+
+   }
+
+   .menuItem {
+       position: relative;
+       margin: 0;
+   }
+
+
+   .subMenu {
+       position: absolute;
+       left: -20px;
+       top: 27px;
+       display: block;
+       margin: 10px;
+       width: 200px;
+       display: none;
+   }
+
+   .menuItem:hover .subMenu {
+       background: rgb(156, 153, 153);
+       display: block;
+   }
+
+   .subMenuItem {
+       padding: 10px;
+       margin: 5px 0 5px 0;
+   }
