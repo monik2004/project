@@ -1,8 +1,10 @@
 .container {
+    margin: auto;
     margin-top: 65px;
+    width: 33%;
 }
 
-input,select,option,textarea{
+input,select,option,textarea,.gneder{
     font-size: x-large;
     padding: 8px;
     margin: 10px;
@@ -21,4 +23,15 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background: rgb(160, 155, 155);
     /* background: red; */
+}
+
+input[type="radio"]{
+    margin-top:10px ;
+    margin: 10px auto 0 auto;
+    width: 20px;
+}
+
+.gneder{
+    display: flex;
+    margin-bottom: 0px;
 }

@@ -31,7 +31,8 @@
                 <br>
                 <input type="text" name="hosptalNumber" placeholder="Hospital Email">
                 <br>
-                <input type="text" name="hospitalAddress" placeholder="Enter Hospital Address">
+                
+                <textarea name="hospitalAddress" cols="30" rows="5" placeholder="Enter Hospital Address"></textarea>
                 <br>
                 <input type="text" name="hospitalCity" id="" placeholder="Enter City Name">
                 <br>

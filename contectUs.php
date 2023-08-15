@@ -21,7 +21,7 @@
                 <br><br>
                 <textarea name="message" rows="3" placeholder="Message"></textarea>
                 <br><br>
-                <input type="submit" id="btn_submit">
+                <input type="submit" id="btn_submit" value="Submit">
 
             </form>
         </div>
