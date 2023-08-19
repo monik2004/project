@@ -7,7 +7,7 @@
 <body>
         <footer class="content">
             <div >
-                Copyright © 2019, Vrajbhoomi Web Export, All Rights Reserved | Privacy Policy
+                Copyright © 2023, Sem 5 Project , All Rights Reserved | Privacy Policy
             </div>
         </footer>
     

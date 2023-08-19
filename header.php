@@ -12,7 +12,7 @@
         <div class="logo">
             <img src="img/heart1.png">
         </div>
-        <div class="menuItem"><a href="index.php"> Home </a></div>
+        <div class="menuItem"><a href="/project"> Home </a></div>
         <div class="menuItem"><a href="aboutUs.php"> About Us </a></div>
         <div class="menuItem"><a href="contectUs.php"> Contect us </a></div>
         <div class="menuItem"><a> Register </a>

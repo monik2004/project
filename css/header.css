@@ -1,60 +1,57 @@
-   a {
-       font-size: large;
-       text-decoration: none;
-       color: whitesmoke;
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
 
-   }
+nav {
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+}
 
-   nav {
-       height: 50px;
-       width: 100%;
-       top: 0px;
-       position: fixed;
-   }
+.menu {
+    background: rgb(156, 153, 153);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-   .menu {
-       background: rgb(156, 153, 153);
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-   }
+img {
+    height: 50px;
+    width: 500px;
+}
 
-   img {
-       height: 50px;
-       width: 500px;
-   }
+.menuItem>a {
+    padding: 0.85rem;
+}
 
-   .menuItem>a {
-       padding: 17px;
-   }
+.menu>.menuItem :hover {
+    background: gray;
+}
 
-   .menu>.menuItem :hover {
-       background: gray;
+.menuItem {
+    position: relative;
+    margin: 0;
+}
 
-   }
+.subMenu {
+    position: absolute;
+    left: -20px;
+    top: 27px;
+    display: block;
+    margin: 10px;
+    max-width: 200px;
+    display: none;
+}
 
-   .menuItem {
-       position: relative;
-       margin: 0;
-   }
+.menuItem:hover .subMenu {
+    background: rgb(156, 153, 153);
+    display: block;
+}
 
-
-   .subMenu {
-       position: absolute;
-       left: -20px;
-       top: 27px;
-       display: block;
-       margin: 10px;
-       width: 200px;
-       display: none;
-   }
-
-   .menuItem:hover .subMenu {
-       background: rgb(156, 153, 153);
-       display: block;
-   }
-
-   .subMenuItem {
-       padding: 10px;
-       margin: 5px 0 5px 0;
-   }
+.subMenuItem {
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
