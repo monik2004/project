@@ -21,7 +21,7 @@
                 <div class="subMenuItem"> <a href="hospitalRegistrationForm.php"> Register Hospital </a> </div>
             </div>
         </div>
-        <div class="menuItem"><a href="#"> Log In </a></div>
+        <div class="menuItem"><a href="login.php"> Log In </a></div>
     </div>
     </nav>
 </body>

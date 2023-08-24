@@ -2,6 +2,8 @@
 <html lang="en">
 <?php
 include "CRUD_Operation/connection.php";
+include "CRUD_Operation/checkEmail.php";
+
 session_start();
 if (isset($_POST['submit'])) {
 
@@ -16,25 +18,10 @@ if (isset($_POST['submit'])) {
     $HospitalCity = $_POST['hospitalCity'];
     $HospitalState = $_POST['hospiState'];
 
-    // Check Email is not exist alredy
-    $SelectSql = $conn->prepare("SELECT * FROM `hospitalregistration` WHERE `Hospital_Email` = ?");
-    $SelectSql->bind_param("s", $HospitalEmail);
-    $SelectSql->execute();
-    $res = $SelectSql->get_result();
-
-    $SelectSql2= $conn->prepare("SELECT * FROM `userregistration` WHERE `User_Email` = ?");
-    $SelectSql2->bind_param("s",$x);
-    $SelectSql2->execute();
-    $res2= $SelectSql2->get_result();
-    
-
-    // $res->num_rows;
-    if ($res->num_rows < 1 and $res2->num_rows<1 and ($res->num_rows !=  $res2->num_rows )) {
+    if ($varify->check($HospitalEmail)) {
 
         $insertSql = $conn->prepare("INSERT INTO `hospitalregistration`(`Hospital_Name`, `Hospital_Owner`, `Hospital_Type`, `Hospital_contect_No1`, `Hospital_contect_No2`, `Hospital_Email`, `Hospital_Address`, `Hospital_city`, `Hospital_State`) VALUES (?,?,?,?,?,?,?,?,?)");
-
         $insertSql->bind_param("sssssssss", $HospitalName, $HospitalOwner, $HospitalType, $HospitalMobileNo1, $HospitalMobileNo2, $HospitalEmail, $HospitalAddress, $HospitalAddress, $HospitalAddress);
-
         $insertSql->execute();
 
         echo "
@@ -68,7 +55,7 @@ if (isset($_POST['submit'])) {
 
     <div class="container">
         <div class="hospitalRegistrationForm">
-            <form action="#" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <input type="text" name="hospitalName" placeholder="Enter Hospita Name" required>
                 <br>
                 <input type="text" required name="hospitalowner" placeholder="Enter Owner / Trusty Name">
@@ -109,7 +96,7 @@ if (isset($_POST['submit'])) {
 </body>
 
 <?php include("footer.php");
-echo $res2->num_rows;
+
 ?>
 
 </html>

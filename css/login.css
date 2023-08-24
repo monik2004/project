@@ -1,0 +1,37 @@
+.container,.container2 {
+    /* margin-top: 65px; */
+    width: 400px;
+    height: 150px;
+    padding: 50px 25px;
+    background: rgb(225, 218, 218);
+    border-radius: 20px;
+    box-shadow: rgba(128, 127, 127, 0.5) 5px 5px, rgba(146, 145, 145, 0.3) 10px 10px, rgba(153, 149, 149, 0.2) 15px 15px, rgba(163, 159, 159, 0.1) 20px 20px, rgba(173, 159, 159, 0.05) 25px 25px;
+    ;
+    margin: 11rem auto 10.5rem 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type="email"],
+input[type="text"]
+ {
+    width: 350px;
+    font-size: x-large;
+    border: 0px white;
+    border-radius: 10px;
+}
+#otpButton {
+    font-size: xx-large;
+    width: 300px;
+    border-radius: 10px;
+    border: 0px whitesmoke;  
+    background: rgb(203, 198, 198);
+    color: rgb(60, 53, 53);
+    margin: auto;
+    margin-top:20px  ;
+}
+
+#otpButton:hover{
+    background: rgb(160, 155, 155);
+}
