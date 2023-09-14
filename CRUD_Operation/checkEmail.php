@@ -21,16 +21,35 @@ class checkEmail
         $SelectSql2->bind_param("s", $mailid);
         $SelectSql2->execute();
         $res2 = $SelectSql2->get_result();
+        
+        // $SelectSql3 = $conn->prepare("SELECT * FROM `admin`  WHERE `Email` = ?");
+        
+        $SelectSql3 = $conn->prepare("SELECT * FROM `admin`  WHERE `Email` = ?");
+        $SelectSql3->bind_param("s", $mailid);
+        $SelectSql3->execute();
+        $res3 = $SelectSql3->get_result();
 
 
-        if ($res->num_rows == 0  && $res2->num_rows == 0) {
+        if ($res->num_rows == 0  && $res2->num_rows == 0 && $res3->num_rows == 0) {
             return 1;
         } else {
             if($res->num_rows == 1){
                 $_SESSION['UserType'] = "Hospital";
+                $x = $res->fetch_row();
+                $uname= $x[1] ; 
+                $_SESSION['UserName'] = $uname;
             }elseif ($res2->num_rows == 1) {
                 $_SESSION['UserType'] = "Doner";
+                $x = $res2->fetch_row();
+                $uname= $x[1] ; 
+                $_SESSION['UserName'] = $uname;
+            }elseif ($res3->num_rows == 1) {
+                $_SESSION['UserType'] = "Admin";
+                $x = $res3->fetch_row();
+                $uname= $x[1] ; 
+                $_SESSION['UserName'] = $uname;
             }
+         
             return 0;
         }
     }

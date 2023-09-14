@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
     $donerAddress = $_POST['userAddress'];
     $donerCity = $_POST['usercity'];
     $donerState = $_POST['userState'];
+    $donerBloodFroup = $_POST['userBloodGroup'];
 
     if ($varify->check($donerEmail) ) {
 
@@ -64,6 +65,19 @@ if (isset($_POST['submit'])) {
                 <input type="radio" name="userGender" value="Male">Male
                 <input type="radio" name="userGender" value="Female">Female
             </div>
+            <br>
+            <select name="userBloodGroup">
+                <option disabled selected> Select Blood Group </option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <br>
             <br>
             <input type="text" name="userMobile" placeholder="Enter Your Mobile Number">
             <br>

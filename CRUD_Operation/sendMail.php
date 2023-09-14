@@ -12,18 +12,17 @@ class sendMail
         $body = "This Is Otp To Varify Your Email And Login $otp ";
         $header = "From: rupareliyamonik3@gmail.com";
 
-        if($varify->check($email) == 0){
+        if ($varify->check($email) == 0) {
 
             if (mail($tomail, $sub, $body, $header)) {
+                $_SESSION["email"] = $email;
+                $_SESSION['Otp'] = $otp;
                 echo "
                     <script>
                     alert('Otp send ');
                     location.href='otpVarify.php';
                     </script>
                 ";
-                $_SESSION["email"]= $email;
-                $_SESSION['Otp']=$otp;
-                // header("location: otpVarify.php ");
             } else {
                 echo "
                     <script>
@@ -31,18 +30,15 @@ class sendMail
                         location.href='login.php';
                     </script>
             ";
-            // header("location: login.php ");
             }
-        }else{
+        } else {
             echo "
                     <script>
                         alert('$email Is Not Exist Please Register Email First');
                         location.href='login.php';
                     </script>
             ";
-            // header("location: login.php ");
         }
-
     }
 }
-    $mailSend = new sendMail();
+$mailSend = new sendMail();

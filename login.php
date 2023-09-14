@@ -12,11 +12,8 @@
     // session_start();
 
     if (isset($_POST['BtnSendOtp'])) {
-
         $mailId = $_POST['LoginEmail'];
-
-        $mailSend->sendIt($mailId);
-        
+        $mailSend->sendIt($mailId);        
     }
 ?>
 

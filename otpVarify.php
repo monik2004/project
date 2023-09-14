@@ -16,11 +16,24 @@ if (isset($_POST['LogIn'])) {
     $varifyOtp = $_POST['varifyOtp'];
 
     if ($_SESSION['Otp'] === $varifyOtp) {
-        echo "
+        $_SESSION["LOgin_or_Not"]=1;
+
+        if( $_SESSION['UserType'] == 'Admin'){
+            echo "
+                <script>
+                    alert('Log In Done');
+                    location.href='admin/admin.php';
+                </script>
+            ";
+        }else {
+            echo "
             <script>
                 alert('Log In Done');
+                location.href='index.php';
             </script>
         ";
+        }
+
     } else {
         echo "
             <script>

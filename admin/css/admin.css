@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    margin: 120px auto 75px auto;
+}
+.sub-container-1{
+    height: 300px;
+    width: 300px;
+    margin: auto 25px;
+    padding: auto;
+    background: rgba(255, 0, 0, 0.375);
+    
+}
+.sub-container-2{
+    height: 300px;
+    width: 300px;
+    padding: auto;
+    margin: auto 25px;
+    background: rgba(0, 128, 0, 0.375);
+}
+h1{
+    margin-top: 60px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.sub-container-3{
+    height: 300px;
+    width: 300px;
+    padding: auto;
+    margin: auto 25px;
+    background: rgba(0, 0, 255, 0.375);
+}
